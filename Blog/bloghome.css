@@ -50,32 +50,11 @@ nav li {
 
 /* Main content styles */
 main {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
   background-color: #abcb8a;
-}
-
-article {
-  background-color: #fff;
-  border: 1px solid #e9ecef;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: calc(33.33% - 20px);
-}
-
-article img {
-  width: 100%;
-}
-
-article h2 {
-  font-size: 24px;
-  margin: 10px;
-}
-
-article p {
-  margin: 10px;
 }
 
 /* Footer styles */
@@ -97,13 +76,13 @@ footer {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #f1f1f1;
+  position: relative;
+  background-color: #4cd839;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
