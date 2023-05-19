@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #46c9e6;
+    background-color: #c2e9c2;
   }
   h1 {
     font-family: Arial, sans-serif;
@@ -28,7 +28,7 @@ body {
   }
   
   a {
-    color: #0077cc;
+    color: #f00c0c;
     text-decoration: none;
   }
   
