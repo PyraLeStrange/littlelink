@@ -1,97 +1,67 @@
-/* Global Styles */
+* {
+  box-sizing:content-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0;
+  font-family: Arial;
+  background-image: url('blogpics/Blue\ Gold\ Illustrated\ Marble\ Phone\ Wallpaper.png');
+  background-size: cover;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+  background: beige;
+}
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float:right;
+  width: 25%;
+  padding-left: 10px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: beige;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 15px;
+}
+*/
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
     padding: 0;
-    background-color: #c2e9c2;
   }
-  h1 {
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  h2 {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  h3 {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  
-  a {
-    color: #f00c0c;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Header Styles */
-  
-  header {
-    background-color: #333;
-    color: #d11212;
-    padding: 20px;
-    font-size: xxx-large;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  header nav li a {
-    color: #fff;
-  }
-  
-  /* Main Content Styles */
-  
-  main {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  ul {
-    list-style-position: inside;
-  }
-  ol {
-    list-style-position: inside;
-  }
-
-  ul.a {
-    list-style-type: circle;
-  }
-  
-  ul.b {
-    list-style-type: square;
-  }
-  
-  ol.a {
-    list-style-type: circle;
-  }
-  
-  ol.b {
-    list-style-type: square;
-  }
+}
